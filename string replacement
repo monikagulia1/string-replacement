@@ -1,0 +1,10 @@
+a=str(input(print("PLEASE ENTER CHARACTER BY WHICH YOU WANT TO REPLACE")))
+s=input(print("PLEASE ENTER YOUR STRING"))
+f=""
+for i in range(0,len(s)):
+    if s[i].casefold()=="a" or s[i].casefold()=="e" or s[i].casefold()=="i" or s[i].casefold()=="o" or s[i].casefold()=="u" :
+        f=f+str(a)
+    else:
+        f=f+str(s[i])
+s=s.replace(s,f)
+print(s)
